@@ -24,14 +24,16 @@ namespace piggy_bank
 
         public void showAmount(decimal amount)
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("You have $ {0} in your piggy bank ", amount);
         }
 
         public int showMenu()
         {
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Please select an option:");
             Console.WriteLine("1) Add coin to your piggy bank.");
-            Console.WriteLine("2) See piggy bank cash amount.");
+            Console.WriteLine("2) See available volume");
             Console.WriteLine("3) Empty Piggy bank");
            
             try
@@ -80,7 +82,14 @@ namespace piggy_bank
 
         public void printAmount(decimal amount)
         {
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("You current have {0} in your piggy bank" , amount);
+        }
+
+        public void outputVolumes(decimal totalVolume , decimal usedVolume)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Your piggy bank is currently {0}% full ", Math.Round((usedVolume/totalVolume) * 100));
         }
 
         public int getAmountCoins()

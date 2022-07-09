@@ -41,7 +41,7 @@ while (run_progam)
             break; 
         case 2:
 
-            client.printAmount(bank.GetTotalAmount());
+            client.outputVolumes(PiggyBankMetaData.PiggyBank.maxVolumeCMM, bank.totalVolume);
 
             break;
         case 3:

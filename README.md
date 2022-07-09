@@ -7,7 +7,7 @@ The piggy bank has certain features :
   2) The piggy bank only has 1.2 liters of volume.
   
 Prerequisites:
-  1) Download .net Core
+  1) Download .net Core 6. See Link: https://dotnet.microsoft.com/en-us/download
   
 To start the project you have to:
   1) Clone the repository.

@@ -40,6 +40,7 @@ namespace piggy_bank
         public void Reset()
         {
             coinList.Clear();
+            totalVolume = 0;
         }
     }
 }

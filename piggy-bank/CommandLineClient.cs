@@ -18,6 +18,7 @@ namespace piggy_bank
 
         public void greet()
         {
+            Console.Clear();
             Console.WriteLine("Welcome to your piggy bank");
         }
 
